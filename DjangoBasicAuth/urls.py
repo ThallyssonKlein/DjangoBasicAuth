@@ -20,7 +20,7 @@ from django.conf.urls import url
 from rest_framework.authtoken.views import ObtainAuthToken
 
 urlpatterns = [
-    path('^admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     url(r'^auth/$', ObtainAuthToken.as_view()),
     url(r'^', Home.as_view())
 ]
